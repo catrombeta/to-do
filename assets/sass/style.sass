@@ -6,9 +6,11 @@
     margin: 0
     box-sizing: border-box
 
+body
+    font-family: 'Sono', sans-serif
+
 .navbar
     top: 0
-    background-color: variables.$bg-color-nav
     width: 100%
     position: fixed
 
@@ -20,11 +22,26 @@
             width: 25%
             color: variables.$color-nav
             text-decoration: none
+            background-color: variables.$bg-color-nav
+
 
             li
                 list-style: none
                 padding: 1rem 0
                 text-align: center
+                
+
+            &:hover
+                color: variables.$bg-color-nav
+                background-color: variables.$color-nav
+                transition: .5s ease-in-out
+
+
+section
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
 
 .index
     @include mixins.bg-section('bg-4.jpeg')
@@ -36,13 +53,12 @@
         height: 40%
         padding: 2rem
 
-        .card
-            width: 33%
-            background-color: variables.$bg-card
+        h1
+            text-align: center
+            color: variables.$primary-color
 
-section
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 100vh
+        // .card
+        //     width: 33%
+        //     background-color: variables.$bg-card
+
 
