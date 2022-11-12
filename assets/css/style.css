@@ -1,5 +1,32 @@
-div {
-  background: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1833;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body section .container {
+  background-color: #ffe1ff;
+  width: 60%;
+  height: 70%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+body section .container h1 {
+  text-align: center;
+}
+body section .container-ul {
+  color: #1b1833;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

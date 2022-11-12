@@ -1,3 +1,30 @@
-div
-    background: red
+@use 'variables'
 
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: variables.$bg-color
+
+    section
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
+
+        .container
+            background-color: variables.$container-bg-color
+            width: 60%
+            height: 70%
+            padding: 2rem
+            border-radius: 0.5rem
+
+            h1
+                text-align: center
+            
+            &-ul
+                color: variables.$bg-color
+                width: 50%
+                margin: 0 auto
