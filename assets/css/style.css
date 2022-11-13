@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Sono", sans-serif;
 }
@@ -34,27 +38,41 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.index {
+.section-group {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("../../img/bg-4.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.index .container {
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col-6 {
+  width: 45%;
+}
+
+.block {
+  height: 100vh;
+}
+
+#home .container {
   display: flex;
   justify-content: space-between;
   width: 70%;
   height: 40%;
   padding: 2rem;
 }
-.index .container h1 {
+#home .container h1 {
   text-align: center;
   color: #fff;
 }

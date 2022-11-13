@@ -6,6 +6,9 @@
     margin: 0
     box-sizing: border-box
 
+html
+    scroll-behavior: smooth
+
 body
     font-family: 'Sono', sans-serif
 
@@ -36,15 +39,30 @@ body
                 background-color: variables.$color-nav
                 transition: .5s ease-in-out
 
+.section-group
+    @include mixins.bg-section('bg-4.jpeg')
+
 
 section
     display: flex
     justify-content: center
     align-items: center
-    height: 100vh
 
-.index
-    @include mixins.bg-section('bg-4.jpeg')
+
+.row
+    width: 100%
+    display: flex
+
+.col-6
+    width: 45%
+
+.block
+    height: 100vh
+    
+
+// ----------- HOME ----------- 
+
+#home
 
     .container
         display: flex
@@ -57,8 +75,7 @@ section
             text-align: center
             color: variables.$primary-color
 
-        // .card
-        //     width: 33%
-        //     background-color: variables.$bg-card
+
+// ----------- TODO LIST ----------- 
 
 
