@@ -45,34 +45,51 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-section {
+.section-group section {
   display: flex;
   justify-content: center;
+  height: 100vh;
   align-items: center;
 }
-
-.row {
+.section-group .container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.section-group .container .row {
   width: 100%;
   display: flex;
+  align-items: center;
 }
-
-.col-6 {
+.section-group .container .col-6 {
   width: 45%;
 }
-
-.block {
-  height: 100vh;
+.section-group .container .body-list {
+  background-color: #C8C9CE;
+  width: 60%;
+  box-sizing: border-box;
+  padding: 2rem 3rem;
+  min-height: 35rem;
 }
-
-#home .container {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  height: 40%;
-  padding: 2rem;
+.section-group .container .body-list h2 {
+  text-align: center;
 }
-#home .container h1 {
+.section-group .container .body-list .input-list {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-family: "Sono", sans-serif;
+  height: 2.5rem;
+}
+.section-group .container .body-list .btn-list {
+  width: 15%;
+  height: 2.5rem;
+  margin-left: 1rem;
+}
+.section-group .container .body-list ul {
+  padding: 1rem;
+}
+.section-group h1 {
   text-align: center;
   color: #fff;
 }
