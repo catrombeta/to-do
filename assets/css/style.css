@@ -89,6 +89,13 @@ body {
 .section-group .container .body-list ul {
   padding: 1rem;
 }
+.section-group .container .body-list .btnClearTask {
+  color: #143627;
+  background-color: #AFB2AF;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
 .section-group h1 {
   text-align: center;
   color: #fff;
