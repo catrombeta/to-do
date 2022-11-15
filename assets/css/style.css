@@ -74,14 +74,14 @@ body {
 .section-group .container .body-list h2 {
   text-align: center;
 }
-.section-group .container .body-list .input-list {
+.section-group .container .body-list .input-list-one, .section-group .container .body-list .input-list-two, .section-group .container .body-list .input-list-three {
   width: 80%;
   padding: 0.5rem;
   margin: 1rem 0;
   font-family: "Sono", sans-serif;
   height: 2.5rem;
 }
-.section-group .container .body-list .btn-list {
+.section-group .container .body-list .btn-list-one, .section-group .container .body-list .btn-list-two, .section-group .container .body-list .btn-list-three {
   width: 15%;
   height: 2.5rem;
   margin-left: 1rem;
@@ -89,7 +89,10 @@ body {
 .section-group .container .body-list ul {
   padding: 1rem;
 }
-.section-group .container .body-list .btnClearTask {
+.section-group .container .body-list ul li {
+  margin-bottom: 0.5rem;
+}
+.section-group .container .body-list .btnClearTaskOne, .section-group .container .body-list .btnClearTaskTwo, .section-group .container .body-list .btnClearTaskThree {
   color: #143627;
   background-color: #AFB2AF;
   padding: 0.5rem;

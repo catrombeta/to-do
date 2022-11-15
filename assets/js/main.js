@@ -1,6 +1,8 @@
-const inputList = document.querySelector('.input-list');
-const btnList = document.querySelector('.btn-list');
-const addListTodo = document.querySelector('#add-list-todo');
+// ------------- TODO LIST ONE --------------- 
+
+const inputListOne = document.querySelector('.input-list-one');
+const btnListOne = document.querySelector('.btn-list-one');
+const addListTodoOne = document.querySelector('#add-list-todo-one');
 
 function createLi() {
     const li = document.createElement('li');
@@ -12,7 +14,7 @@ function createLi() {
 function createTask(textInput) {
     const li = createLi();
     li.innerText = textInput;
-    addListTodo.appendChild(li);
+    addListTodoOne.appendChild(li);
     clearTask(li);
     clearInput();
     saveTask();
@@ -21,23 +23,23 @@ function createTask(textInput) {
 // CLEAR INPUT AFTER ADD TASK
 
 function clearInput() {
-    inputList.value = '';
-    inputList.focus();
+    inputListOne.value = '';
+    inputListOne.focus();
 }
 
 // BTN CLEAR TASK
 
-btnList.addEventListener('click', () => {
-    if (!inputList.value) return;
-    createTask(inputList.value);
+btnListOne.addEventListener('click', () => {
+    if (!inputListOne.value) return;
+    createTask(inputListOne.value);
 });
 
 // CLICK ENTER TO ADD TASK
 
-inputList.addEventListener('keypress', e => {
+inputListOne.addEventListener('keypress', e => {
     if (e.keyCode === 13) {
-        if (!inputList.value) return;
-        createTask(inputList.value);
+        if (!inputListOne.value) return;
+        createTask(inputListOne.value);
     }
 });
 
@@ -45,11 +47,11 @@ inputList.addEventListener('keypress', e => {
 
 function clearTask(li) {
     li.innerText += ' ';
-    const btnList = document.createElement('button');
-    btnList.innerText = 'Clear Task';
-    btnList.setAttribute('class', 'btnClearTask');
-    btnList.setAttribute('title', 'Clear task');
-    li.appendChild(btnList);
+    const btnListOne = document.createElement('button');
+    btnListOne.innerText = 'Clear Task';
+    btnListOne.setAttribute('class', 'btnClearTaskOne');
+    btnListOne.setAttribute('title', 'Clear task');
+    li.appendChild(btnListOne);
 }
 
 // REMOVE TASK BUTTON
@@ -57,7 +59,7 @@ function clearTask(li) {
 document.addEventListener('click', (e) => {
     const el = e.target;
 
-    if (el.classList.contains('btnClearTask')) {
+    if (el.classList.contains('btnClearTaskOne')) {
         el.parentElement.remove();
         saveTask();
     }
@@ -66,7 +68,7 @@ document.addEventListener('click', (e) => {
 // SAVE TASKS IN LOCAL STORAGE
 
 function saveTask() {
-    const liTasks = addListTodo.querySelectorAll('li');
+    const liTasks = addListTodoOne.querySelectorAll('li');
     const listTodoTasks = [];
 
     for (let task of liTasks) {
@@ -76,12 +78,12 @@ function saveTask() {
     }
 
     const tasksJSON = JSON.stringify(listTodoTasks);
-    localStorage.setItem('addListTodo', tasksJSON);
+    localStorage.setItem('addListTodoOne', tasksJSON);
 }
 
 function addSaveTasks() {
-    const addListTodo = localStorage.getItem('addListTodo');
-    const listTodoTasks = JSON.parse(addListTodo);
+    const addListTodoOne = localStorage.getItem('addListTodoOne');
+    const listTodoTasks = JSON.parse(addListTodoOne);
 
     for (let task of listTodoTasks) {
         createTask(task);
@@ -89,3 +91,6 @@ function addSaveTasks() {
 }
 
 addSaveTasks();
+
+// ------------- TODO LIST TWO --------------- 
+
