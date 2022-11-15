@@ -65,34 +65,37 @@ body {
   width: 45%;
 }
 .section-group .container .body-list {
+  min-height: 35rem;
+}
+.section-group .container .body-list, .section-group .container .content-about {
   background-color: #C8C9CE;
   width: 60%;
   box-sizing: border-box;
   padding: 2rem 3rem;
-  min-height: 35rem;
 }
-.section-group .container .body-list h2 {
+.section-group .container .body-list h2, .section-group .container .content-about h2 {
   text-align: center;
+  width: 100%;
 }
-.section-group .container .body-list .input-list-one, .section-group .container .body-list .input-list-two, .section-group .container .body-list .input-list-three {
+.section-group .container .body-list .input-list-one, .section-group .container .body-list .input-list-two, .section-group .container .body-list .input-list-three, .section-group .container .content-about .input-list-one, .section-group .container .content-about .input-list-two, .section-group .container .content-about .input-list-three {
   width: 80%;
   padding: 0.5rem;
   margin: 1rem 0;
   font-family: "Sono", sans-serif;
   height: 2.5rem;
 }
-.section-group .container .body-list .btn-list-one, .section-group .container .body-list .btn-list-two, .section-group .container .body-list .btn-list-three {
+.section-group .container .body-list .btn-list-one, .section-group .container .body-list .btn-list-two, .section-group .container .body-list .btn-list-three, .section-group .container .content-about .btn-list-one, .section-group .container .content-about .btn-list-two, .section-group .container .content-about .btn-list-three {
   width: 15%;
   height: 2.5rem;
   margin-left: 1rem;
 }
-.section-group .container .body-list ul {
+.section-group .container .body-list ul, .section-group .container .content-about ul {
   padding: 1rem;
 }
-.section-group .container .body-list ul li {
+.section-group .container .body-list ul li, .section-group .container .content-about ul li {
   margin-bottom: 0.5rem;
 }
-.section-group .container .body-list .btnClearTaskOne, .section-group .container .body-list .btnClearTaskTwo, .section-group .container .body-list .btnClearTaskThree {
+.section-group .container .body-list .btnClearTaskOne, .section-group .container .body-list .btnClearTaskTwo, .section-group .container .body-list .btnClearTaskThree, .section-group .container .content-about .btnClearTaskOne, .section-group .container .content-about .btnClearTaskTwo, .section-group .container .content-about .btnClearTaskThree {
   color: #143627;
   background-color: #AFB2AF;
   padding: 0.5rem;
@@ -102,6 +105,24 @@ body {
 .section-group h1 {
   text-align: center;
   color: #fff;
+}
+
+.section-about {
+  margin: 1rem 0;
+}
+.section-about h3 {
+  margin: 0.7rem 0;
+}
+.section-about a {
+  color: #AFB2AF;
+  background-color: #143627;
+  text-decoration: none;
+}
+.section-about a:hover {
+  color: #143627;
+  background-color: #AFB2AF;
+  font-weight: 600;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

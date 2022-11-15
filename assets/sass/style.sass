@@ -62,14 +62,17 @@ body
             width: 45%
 
         .body-list
+            min-height: 35rem
+
+        .body-list, .content-about
             background-color: variables.$bg-list
             width: 60%
             box-sizing: border-box
             padding: 2rem 3rem
-            min-height: 35rem
 
             h2
                 text-align: center
+                width: 100%
             
             .input-list-one, .input-list-two, .input-list-three
                 width: 80%
@@ -100,6 +103,24 @@ body
     h1
         text-align: center
         color: variables.$primary-color
+
+.section-about
+    margin: 1rem 0
+
+    h3
+        margin: 0.7rem 0
+
+    a
+        color: variables.$color-nav
+        background-color: variables.$bg-color-nav
+        text-decoration: none
+
+        &:hover
+            color: variables.$bg-color-nav
+            background-color: variables.$color-nav
+            font-weight: 600
+            transition: .5s
+
 
 
 
