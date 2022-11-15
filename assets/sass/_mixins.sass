@@ -6,3 +6,12 @@
     background-size: cover
     background-repeat: no-repeat
     background-attachment: fixed
+
+@mixin tablet
+    @media (max-width #{variables.$md-screen})
+        @content
+
+@mixin phone
+    @media (max-width #{variables.$sm-screen}) 
+        @content
+    

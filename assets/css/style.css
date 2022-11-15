@@ -56,6 +56,16 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width 768px) {
+  .section-group .container {
+    width: 90%;
+  }
+}
+@media (max-width 300px) {
+  .section-group .container {
+    width: 90%;
+  }
+}
 .section-group .container .row {
   width: 100%;
 }
