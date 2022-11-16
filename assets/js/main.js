@@ -176,6 +176,8 @@ function addSaveTasks() {
 
 addSaveTasks();
 
+// SAVE TASKS IN LOCAL STORAGE (SCHOOL)
+
 function addSaveTasksSchool() {
     const addListTodoTwo = localStorage.getItem('addListTodoTwo');
     const listTodoTasksSchool = JSON.parse(addListTodoTwo);
