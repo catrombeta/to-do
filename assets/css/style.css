@@ -56,12 +56,22 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width 768px) {
+@media (max-width: 600px) {
   .section-group .container {
     width: 90%;
   }
 }
-@media (max-width 300px) {
+@media (max-width: 900px) {
+  .section-group .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .section-group .container {
+    width: 90%;
+  }
+}
+@media (min-width: 1800px) {
   .section-group .container {
     width: 90%;
   }
@@ -76,8 +86,8 @@ body {
   min-height: 35rem;
 }
 .section-group .container .body-list, .section-group .container .content-about {
+  width: 100%;
   background-color: #C8C9CE;
-  width: 60%;
   box-sizing: border-box;
   padding: 2rem 3rem;
 }

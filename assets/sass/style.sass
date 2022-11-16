@@ -53,11 +53,17 @@ body
         display: flex
         justify-content: center
 
-        @include mixins.tablet
+        @include mixins.respond(phone)
             width: 90%
 
-        @include mixins.phone
-            width: 90% // ARRUMAR ISSO
+        @include mixins.respond(tab-port)
+            width: 90%
+
+        @include mixins.respond(tab-land)
+            width: 90%
+
+        @include mixins.respond(big-desktop)
+            width: 90%
 
         .row
             width: 100%
@@ -69,8 +75,8 @@ body
             min-height: 35rem
 
         .body-list, .content-about
+            width: 100%
             background-color: variables.$bg-list
-            width: 60%
             box-sizing: border-box
             padding: 2rem 3rem
 
