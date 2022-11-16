@@ -81,16 +81,6 @@ function saveTask() {
     localStorage.setItem('addListTodoOne', tasksJSON);
 }
 
-function addSaveTasks() {
-    const addListTodoOne = localStorage.getItem('addListTodoOne');
-    const listTodoTasks = JSON.parse(addListTodoOne);
-
-    for (let task of listTodoTasks) {
-        createTask(task);
-    }
-}
-
-addSaveTasks();
 
 // ------------- TODO LIST TWO --------------- 
 
@@ -164,16 +154,27 @@ document.addEventListener('click', (e) => {
 function saveTaskSchool() {
     const liTasks = addListTodoTwo.querySelectorAll('li');
     const listTodoTasksSchool = [];
-
+    
     for (let task of liTasks) {
         let taskText = task.innerText;
         taskText = taskText.replace('Clear Task', '').trim();
         listTodoTasksSchool.push(taskText);
     }
-
+    
     const tasksJSON = JSON.stringify(listTodoTasksSchool);
     localStorage.setItem('addListTodoTwo', tasksJSON);
 }
+
+function addSaveTasks() {
+    const addListTodoOne = localStorage.getItem('addListTodoOne');
+    const listTodoTasks = JSON.parse(addListTodoOne);
+
+    for (let task of listTodoTasks) {
+        createTask(task);
+    }
+}
+
+addSaveTasks();
 
 function addSaveTasksSchool() {
     const addListTodoTwo = localStorage.getItem('addListTodoTwo');
