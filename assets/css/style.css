@@ -37,6 +37,10 @@ body {
   background-color: #AFB2AF;
   transition: 0.5s ease-in-out;
 }
+.navbar ul a:active {
+  color: #143627;
+  background-color: #AFB2AF;
+}
 
 .section-group {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("../../img/bg-4.jpeg");
