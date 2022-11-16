@@ -42,6 +42,10 @@ body
 .section-group
     @include mixins.bg-section('bg-4.jpeg')
 
+    #home
+        h3
+            margin-top: 1rem
+
     section
         display: flex
         justify-content: center
@@ -53,16 +57,16 @@ body
         display: flex
         justify-content: center
 
-        @include mixins.respond(phone)
-            width: 90%
+        @include mixins.respond(big-desktop)
+            width: 60%
 
         @include mixins.respond(tab-port)
-            width: 90%
+            width: 80%
 
         @include mixins.respond(tab-land)
-            width: 90%
+            width: 60%
 
-        @include mixins.respond(big-desktop)
+        @include mixins.respond(phone)
             width: 90%
 
         .row
@@ -84,17 +88,24 @@ body
                 text-align: center
                 width: 100%
             
-            .input-list-one, .input-list-two, .input-list-three
+            .input-list-one, .input-list-two
                 width: 80%
                 padding: 0.5rem
                 margin: 1rem 0
                 font-family: 'Sono', sans-serif
                 height: 2.5rem
 
-            .btn-list-one, .btn-list-two, .btn-list-three
+                @include mixins.respond(tab-land)
+                    width: 100%
+
+            .btn-list-one, .btn-list-two
                 width: 15%
                 height: 2.5rem
                 margin-left: 1rem
+
+                @include mixins.respond(tab-land)
+                    width: 100%
+                    margin-left: 0
 
             ul
                 padding: 1rem
@@ -102,7 +113,7 @@ body
                 li
                     margin-bottom: 0.5rem
 
-            .btnClearTaskOne, .btnClearTaskTwo, .btnClearTaskThree
+            .btnClearTaskOne, .btnClearTaskTwo
                 color: variables.$bg-color-nav
                 background-color: variables.$color-nav
                 padding: 0.5rem

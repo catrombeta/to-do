@@ -45,6 +45,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.section-group #home h3 {
+  margin-top: 1rem;
+}
 .section-group section {
   display: flex;
   justify-content: center;
@@ -56,22 +59,22 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 600px) {
+@media (min-width: 112.5em) {
   .section-group .container {
-    width: 90%;
+    width: 60%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 56.25em) {
   .section-group .container {
-    width: 90%;
+    width: 80%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 75em) {
   .section-group .container {
-    width: 90%;
+    width: 60%;
   }
 }
-@media (min-width: 1800px) {
+@media (max-width: 37.5em) {
   .section-group .container {
     width: 90%;
   }
@@ -95,17 +98,28 @@ body {
   text-align: center;
   width: 100%;
 }
-.section-group .container .body-list .input-list-one, .section-group .container .body-list .input-list-two, .section-group .container .body-list .input-list-three, .section-group .container .content-about .input-list-one, .section-group .container .content-about .input-list-two, .section-group .container .content-about .input-list-three {
+.section-group .container .body-list .input-list-one, .section-group .container .body-list .input-list-two, .section-group .container .content-about .input-list-one, .section-group .container .content-about .input-list-two {
   width: 80%;
   padding: 0.5rem;
   margin: 1rem 0;
   font-family: "Sono", sans-serif;
   height: 2.5rem;
 }
-.section-group .container .body-list .btn-list-one, .section-group .container .body-list .btn-list-two, .section-group .container .body-list .btn-list-three, .section-group .container .content-about .btn-list-one, .section-group .container .content-about .btn-list-two, .section-group .container .content-about .btn-list-three {
+@media (max-width: 75em) {
+  .section-group .container .body-list .input-list-one, .section-group .container .body-list .input-list-two, .section-group .container .content-about .input-list-one, .section-group .container .content-about .input-list-two {
+    width: 100%;
+  }
+}
+.section-group .container .body-list .btn-list-one, .section-group .container .body-list .btn-list-two, .section-group .container .content-about .btn-list-one, .section-group .container .content-about .btn-list-two {
   width: 15%;
   height: 2.5rem;
   margin-left: 1rem;
+}
+@media (max-width: 75em) {
+  .section-group .container .body-list .btn-list-one, .section-group .container .body-list .btn-list-two, .section-group .container .content-about .btn-list-one, .section-group .container .content-about .btn-list-two {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .section-group .container .body-list ul, .section-group .container .content-about ul {
   padding: 1rem;
@@ -113,7 +127,7 @@ body {
 .section-group .container .body-list ul li, .section-group .container .content-about ul li {
   margin-bottom: 0.5rem;
 }
-.section-group .container .body-list .btnClearTaskOne, .section-group .container .body-list .btnClearTaskTwo, .section-group .container .body-list .btnClearTaskThree, .section-group .container .content-about .btnClearTaskOne, .section-group .container .content-about .btnClearTaskTwo, .section-group .container .content-about .btnClearTaskThree {
+.section-group .container .body-list .btnClearTaskOne, .section-group .container .body-list .btnClearTaskTwo, .section-group .container .content-about .btnClearTaskOne, .section-group .container .content-about .btnClearTaskTwo {
   color: #143627;
   background-color: #AFB2AF;
   padding: 0.5rem;
